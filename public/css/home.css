@@ -1,0 +1,117 @@
+
+
+h3{
+    font-size:24px;
+    color: #666;
+}
+
+main{
+    margin-left: auto; 
+    margin-right: auto;
+    width: 90vw;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+main section article{
+    display: flex;
+    text-align: center;
+    width: 90vw;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    
+}
+
+main section article div{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;   
+    text-align: left;
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+}
+
+.prodImg{
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.precio{
+    flex-grow: 0.30;
+    font-size: 18px;
+    color: black;
+    
+}
+.descuento{
+    flex-grow: 0.70;
+    font-size: 16px;
+    color: #39b54a;
+    
+}
+.descrip{
+    font-size: 16px;
+    width: 100%;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+p{
+    font-size:12px;
+    color: #666; 
+}
+
+
+h4{
+    color:#666;
+}
+
+
+@media (min-width: 361px){
+    
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: flex;
+        flex-wrap: wrap;
+        width: 47%;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+ 
+}
+
+
+@media (min-width: 769px){
+   
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 23%;
+        flex-grow: 1;
+    }
+}
