@@ -1,116 +1,162 @@
-* {
+/*Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
 
+* {
     box-sizing: border-box;
 }
 
+button {
+    border: none;
+    border-style: none;
+    background-color: transparent;
+    border-color: none;
+}
+
 body {
-    
     font-family: 'Roboto', sans-serif;
-    padding: 0%;
-    margin: 0%;
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
+    padding: 0px;
+    margin: 0px;
 }
 
-#main-header {
-    padding: 10px;
+header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     background-color: #EAC926;
-}
-
-#burger-button {
     display: block;
-    padding:6px;
-    background-color: #1259c3;
-    color: white; 
-    width: fit-content;
-    border-radius: 5px;
-    margin-bottom:5px;
+    min-width: 360px;
+    padding: 25px 10px 10px;
+}
+
+
+
+header #encabezado {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
-    font-size: 20px;
+    padding: 0px 5px;
+    justify-content: space-between;
 }
 
-.search-bar {
-    width: 50%;
-    text-align: center;
+h4 {
+    color: #666;
 }
 
-.search-bar__text {
-    background-color: white;
-    display: inline;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    color: var(--gris-oscuro);
+p {
+    font-size: 12px;
+    color: #666;
 }
 
-
-#logo {
-    width: 200px;
+img {
+    max-width: 100vw;
 }
 
-#copy-header {
-    font-weight: 400;
-    text-align: center;
+i {
+    margin-bottom: 10px;
 }
 
-#main-navbar {
+#navs {
     display: none;
 }
 
-#main-navbar ul {
-    list-style: none;
-  
-}
-
-#main-navbar a {
-    text-decoration: none;
-    color: #222222;
-    padding: px 0;
-    ;
-}
-
-
-.form {
-    display: block;
-    position: inherit;
-    width: 50%;
-    flex-grow: 1;
-    padding: 3px;
-
-}
-
-.caja {
+#busqueda {
     display: flex;
+    position: relative;
+    width: 49%;
+    padding: 2px;
 }
 
-main {
-    margin: auto;
-    width: 80%;
+form input {
+    display: flex;
+    width: 100%;
+    border: 0px white solid;
+    border-radius: 5px;
+    flex-grow: 1;
 }
 
-#banner {
-    width: 100vw;
+#look {
+    display: flex;
+    background-color: white;
+    position: absolute;
+    right: 3.5%;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#look i {
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: #ebebeb;
+}
+
+#imgCabecera {
+    display: flex;
+    width: 49%;
+    padding: auto;
+}
+
+#enCuotas {
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    flex-grow: 1;
+    margin: 10px auto;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+
+#enCuotas i {
+    display: flex;
+    margin: 0;
+}
+
+#enCuotas span {
+    display: flex;
+    justify-self: center;
 }
 
 
-article {
-    background-color: #ebebeb;
-    padding: 15px;
-    border-top: solid 1px #ebebeb;
-    margin: auto;
+.burger-menu {
+    display: block;
+    padding: 6px;
+    background-color: #1259c3;
+    color: white;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 5px;
 
 }
+
+.burger-menu i {
+    font-size: 2em;
+    padding: auto;
+    margin: 0;
+    font-weight: light;
+}
+
 
 footer {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
 }
 
 footer section {
-     width: 60vw;
-     margin-bottom: 20px;
-     margin-top: 20px;
+    width: 60vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .footerIcon {
@@ -119,100 +165,155 @@ footer section {
     margin-bottom: 10px;
 }
 
-.Producto {
-    display: flex;
+section#copy {
+    text-align: center;
     width: 100%;
-    background-color: white;
-    padding: 10px;
+    margin: 0 auto;
 }
 
-.precio {
-    flex-grow: 0.30;
-    font-size: 18px;
-    color: black;
-    
-}
-.descuento {
-    flex-grow: 0.70;
-    font-size: 16px;
-    color: #39b54a;
-    
-}
-.nombre {
-    font-size: 16px;
-    width: 100%;
-    margin-top: 10px;
-}
 
-main section article i {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
+@media (min-width: 767px) {
+
+    #encabezado>* {
+        flex-grow: 1;
     }
 
+    #imgCabecera {
+        width: 25%;
+    }
 
-    
-@media (min-width: 768px) {
-
-    #main-header-top-bar{
+    #navs {
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 40px;
     }
-    #copy-header{
-        max-width: 350px;
-        text-align: right;
+
+    #navs ul {
+        display: flex;
+        flex-wrap: nowrap;
+        list-style: none;
+        text-align: center;
+        align-items: center;
+        flex-grow: 1;
+        margin: 0;
+        padding: auto;
+        padding-inline-start: 0;
     }
-    #burger-button{
+
+    ul.nav_izq {
+        justify-content: left;
+        padding-bottom: 5px;
+        flex-grow: 1;
+    }
+
+    ul.nav_der {
+        justify-content: right;
+        width: 45%;
+    }
+
+    #navs ul li {
+        display: flex;
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .burger-menu {
         display: none;
     }
-    #main-navbar{
+
+    div #encabezado {
         display: flex;
-        justify-content:space-around;
-        font-size: 19px;
-    }
-   
-    #main-navbar ul{
-        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
 
     }
-    #main-navbar li{
-        margin: 0 5px;
+
+    #busqueda {
+        width: 20%;
+        display: flex;
+        height: 25px;
+        align-self: center;
+        margin: 0px 10px;
+        align-items: center;
+        flex-grow: 2;
+        padding: 2px;
+
     }
-    
+
+    #busqueda input {
+        box-shadow: 0px 0px 5px rgb(100, 100, 100);
+        justify-self: center;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    section#enCuotas {
+        justify-content: left;
+        padding: 0;
+        width: 20vw;
+    }
+
+    #enCuotas span {
+        padding: 0;
+        text-align: left;
+    }
+
+    #look {
+        display: flex;
+        background-color: white;
+        position: absolute;
+        align-self: center;
+        justify-self: flex-end;
+    }
 }
 
-@media (min-width: 1200px) {
-    #logo {
-        width: 250px;
+@media (min-width: 1023px) {
+
+    section#enCuotas{
+        justify-content: center;
     }
-    #main-header-top-bar, #main-header-navbar {
-        max-width: 1200px;
-        margin: auto;
+
+    #enCuotas span{
+        font-size: 14px;
     }
-    #main-header-top-bar {
-        align-items: center;
+
+
+    #navs {
+        display: flex;
+        font-size: large;
+        align-items: flex-end;
+        justify-content: space-between;
     }
-    #copy-header {
-        margin: 0;
-        max-width: none;
-        font-size: 22px;
-        font-weight: 400;
+
+    ul.nav_izq {
+        justify-content: space-around;
     }
-    #main-navbar {
-        margin: auto;
-        margin-top: 40px;
-        font-size: 22px;
+
+    footer {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
-    #main-navbar li {
-        margin: 0 10px;
+
+    footer section {
+        width: 30%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        flex-grow: 1;
     }
+
+    .footerIcon {
+        color: #1259c3;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .footerIcon :hover {
+        color: #03264C;
+    }
+
 
 }
