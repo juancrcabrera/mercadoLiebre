@@ -1,8 +1,8 @@
 
-
 h3{
     font-size:24px;
     color: #666;
+    text-align: center;
 }
 
 main{
@@ -15,6 +15,7 @@ main section{
     display: flex;
     flex-wrap: wrap;
     width: 90vw;
+    justify-content: center;
 }
 
 main section article{
@@ -22,9 +23,11 @@ main section article{
     text-align: center;
     width: 90vw;
     margin-bottom: 10px;
-    margin-right: 10px;
     flex-direction: column;
     
+}
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 main section article div{
@@ -61,6 +64,10 @@ main section article div{
 .descrip{
     font-size: 16px;
     width: 100%;
+    display: none;
+}
+article:hover p.descrip{
+    display: block;
 }
 
 main section article i{
@@ -69,12 +76,18 @@ main section article i{
     padding: 5px;
     width: 30px;
     height: 30px;
+    color: #39b54a;
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: transform 200ms; 
+}
+
+main section article i:hover{
+transform: rotateZ(-90deg);
 }
 
 p{
@@ -91,13 +104,16 @@ h4{
 @media (min-width: 361px){
     
     main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        padding: 5px;
         display: flex;
         flex-wrap: wrap;
         width: 47%;
         flex-direction: column;
         justify-content: space-between;
         flex-grow: 1;
+    }
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
  
@@ -107,11 +123,14 @@ h4{
 @media (min-width: 769px){
    
     main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         width: 23%;
         flex-grow: 1;
+    }
+
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }

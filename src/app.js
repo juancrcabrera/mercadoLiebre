@@ -13,7 +13,7 @@ app.use(express.static(publicPath));
 const port = process.env.PORT || 3000
 //defino el puerto
 app.listen(port, ()=>{
-    console.log(`Escuchando por el puerto ${port}`)
+    console.log(`Servidor conectado al puerto ${port}`)
 });
 
 //defino ñas rutas vinculandolas con un html 
